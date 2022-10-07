@@ -18,14 +18,14 @@ public class GetAllPostsResponse{
 	private int page;
 
 
-	public void hasPost(String post_id,boolean condition){
+	public boolean hasPost(String postId){
 
-		int size = this.data.stream()
-				.filter(dataItem -> dataItem.getId().equals(post_id))
+		int size = data.stream()
+				.filter(dataItem -> dataItem.getId().equals(postId))
 				.collect(Collectors.toList())
 				.size();
 
+		return size == 1;
 
-		Assert.assertEquals(size>=1,condition);
 	}
 }

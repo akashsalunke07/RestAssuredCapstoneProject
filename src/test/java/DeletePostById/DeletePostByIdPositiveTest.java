@@ -25,14 +25,14 @@ public class DeletePostByIdPositiveTest {
 
 
         GetAllPostsResponse allPosts = getAllPostsUserClient.getAllPosts();
-        String post_id = allPosts.getData().get(0).getId();
+        String postId = allPosts.getData().get(0).getId();
 
 
         //Act
-        DeleteUserByIdResponse deleteUserByIdResponse = userClient.deleteUserResponse(post_id);
+        DeleteUserByIdResponse deleteUserByIdResponse = userClient.deleteUserResponse(postId);
 
         //Assert
-        Assert.assertEquals(deleteUserByIdResponse.getId(),post_id);
+        Assert.assertEquals(deleteUserByIdResponse.getId(),postId);
 
     }
 
