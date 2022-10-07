@@ -16,6 +16,7 @@ public class DeletePostByIdPositiveTest {
     @BeforeClass
     public void initializer(){
         userClient = new DeletePostByIdUserClient();
+        getAllPostsUserClient = new GetAllPostsUserClient();
     }
 
     @Test

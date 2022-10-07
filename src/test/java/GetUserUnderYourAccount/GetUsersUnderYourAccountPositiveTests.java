@@ -25,6 +25,6 @@ public class GetUsersUnderYourAccountPositiveTests {
         //Assert
         Assert.assertNotNull(getUserResponseUnderYourAccount.getData());
         Assert.assertEquals(getUserResponseUnderYourAccount.getStatusCode(),200);
-        Assert.assertEquals(getUserResponseUnderYourAccount.getData().size(),6);
+
     }
 }
